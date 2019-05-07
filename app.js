@@ -19,6 +19,15 @@ app.get('/', (req, res) => {
   );
 });
 
+app.get('/signin', (req, res) => {
+  res.render(
+    'signin',
+    {
+      titleAlt: 'Danger Noodle Noms'
+    }
+  );
+});
+
 app.listen(port, () => {
   console.log(`listenting on port ${port}`);
 });
