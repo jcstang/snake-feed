@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   res.render(
       'index',
       {
-        title: 'Snake-Feed App'
+        title: 'Snake-Feed'
       }
   );
 });
