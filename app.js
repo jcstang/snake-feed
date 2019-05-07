@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
   res.render(
       'index',
       {
-        title: 'Snake-Feed'
+        title: 'Snake-Feed',
+        titleAlt: 'Danger Noodle Noms'
       }
   );
 });
