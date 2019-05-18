@@ -1,7 +1,7 @@
 {
   "name": "snake-feed",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.1.0",
+  "description": "user auth time",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
