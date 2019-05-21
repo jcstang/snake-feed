@@ -1,4 +1,5 @@
 const passport = require('passport');
+require('./strategies/local.strategy.js');
 
 //alternative way to export modules
 module.exports = function passportConfig(app){
@@ -16,6 +17,4 @@ module.exports = function passportConfig(app){
         done(null, user);
     });
 
-    //TODO: setup strategies
-    require('./strategies/local.strategy');
 };
