@@ -26,9 +26,14 @@ const listOfImgs = [
   { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'Blah'},
   { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'Blah'},
   { link: 'https://source.unsplash.com/va-wXGiYUao', title: 'Blah'},
-  { link: 'https://source.unsplash.com/sai-x7brics', title: 'Blah'},
-  { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Blah'}
+  { link: 'https://source.unsplash.com/sai-x7brics', title: 'Blah'}
 ];
+
+const listOfSnakes = [
+  { name: "Drax", weight: "7 grams", birthdate: "5/5/2018"},
+  { name: "Jar Jar", weight: "9 grams", birthdate: "5/5/2018"},
+  { name: "Gimli", weight: "220 grams", birthdate: "5/5/2018"}
+]
 
 
 app.post('/auth/signin', (req, res) => {
@@ -62,7 +67,7 @@ app.get('/', (req, res) => {
       {
         title: 'Snake-Feed',
         titleAlt: 'Danger Noodle Noms',
-        listOfImgs
+        listOfSnakes
       }
   );
 });

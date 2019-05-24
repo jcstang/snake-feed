@@ -41,26 +41,26 @@
         <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
 
         <!-- Card component -->
-        <div class="card" style="width: 20rem;">
-          <img src="https://source.unsplash.com/cxMJYcuCLEA" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        <div class="container">
+          <div class="row">
 
-        <!-- Card component -->
-        <%for(let i=0; i<listOfImgs.length; i++) {%>
-          <div class="card" style="width: 20rem;">
+          <!-- Loop -->
+          <%for(let i=0; i<listOfSnakes.length; i++) {%>
+          <div class="card col-lg-4 col-sm-6 col-xs-12">
           <img src="https://source.unsplash.com/cxMJYcuCLEA" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title"><%=listOfSnakes[i].name%></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%=listOfSnakes[i].birthdate%></h6>
+            <p class="card-text"><%=listOfSnakes[i].weight%></p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
+          </div>
+          <%}%>
+          <!-- pooL-->
+
+          </div>
         </div>
-        <%}%>
+        
 
       </div>
     </div>
