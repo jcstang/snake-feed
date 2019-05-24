@@ -18,6 +18,19 @@ app.set('view engine', 'ejs');
 //app.use('/signin', signinRouter);
 //app.use('/auth', authRouter);
 
+const listOfImgs = [
+  { link: 'https://source.unsplash.com/JVeSvSfzWSE', title: 'Blah'},
+  { link: 'https://source.unsplash.com/uywhcKtg5SQ', title: 'Blah'},
+  { link: 'https://source.unsplash.com/gUkGFLbN4us', title: 'Blah'},
+  { link: 'https://source.unsplash.com/g3qrH9Mm93k', title: 'Blah'},
+  { link: 'https://source.unsplash.com/87oQ_cUO1Ns', title: 'Blah'},
+  { link: 'https://source.unsplash.com/b13VqWj-gmU', title: 'Blah'},
+  { link: 'https://source.unsplash.com/va-wXGiYUao', title: 'Blah'},
+  { link: 'https://source.unsplash.com/sai-x7brics', title: 'Blah'},
+  { link: 'https://source.unsplash.com/rQ9QfnEEmrQ', title: 'Blah'}
+];
+
+
 app.post('/auth/signin', (req, res) => {
   console.log(req.body);
   res.json(req.body);
@@ -48,7 +61,8 @@ app.get('/', (req, res) => {
       'index',
       {
         title: 'Snake-Feed',
-        titleAlt: 'Danger Noodle Noms'
+        titleAlt: 'Danger Noodle Noms',
+        listOfImgs
       }
   );
 });
